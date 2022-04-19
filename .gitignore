@@ -67,3 +67,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Validator
+W3C-Validator/

@@ -1,0 +1,18 @@
+/* Colors for body, anchors two classes and display none for another class */
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+a {
+  color: #161616;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.card-category,
+.section-tagline {
+  color: #d73953;
+}

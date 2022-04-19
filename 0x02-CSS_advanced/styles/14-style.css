@@ -1,4 +1,4 @@
-/* Universal box sizing rule */
+/* Normalizing CSS */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
@@ -33,12 +33,6 @@
 
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 html {

@@ -99,10 +99,14 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
+.navbar-menu {
+  float: right;
+}
+
 .nav {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
   text-align: center;
 }
 
@@ -122,10 +126,6 @@ a:active {
 
 .nav .nav-link:hover {
   color: var(--nav-item-link-hover);
-}
-
-.navbar-menu {
-  float: right;
 }
 
 .visually-hidden {

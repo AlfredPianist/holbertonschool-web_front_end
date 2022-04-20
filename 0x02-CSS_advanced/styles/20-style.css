@@ -152,7 +152,7 @@ ul.row {
 
 .row::after {
   content: "";
-  display: inline-table;
+  display: table;
   clear: both;
 }
 

@@ -1,4 +1,4 @@
-/* Works section */
+/* Quotes decoration */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
@@ -297,6 +297,20 @@ ul.row {
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
+}
+
+.card-testimonial .card-quote {
+  position: relative;
+}
+
+.card-testimonial .card-work::before {
+  content: "\201C";
+  position: absolute;
+  top: -4.5rem;
+  left: -1rem;
+  color: #efeded;
+  font-size: 10rem;
+  z-index: -1;
 }
 
 .card-testimonial .card-quote cite {

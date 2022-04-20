@@ -1,4 +1,4 @@
-/* Quotes decoration */
+/* Transitions */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
@@ -69,6 +69,9 @@
   --header-logo-link-left: 0;
 
   --nav-item-link-hover: var(--color-white);
+
+  --transition-duration: 0.3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 [data-section-theme="dark"] {
@@ -140,6 +143,8 @@ a:active {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
   background: var(--button-hover-background);
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
 }
 
 ul.row {
@@ -185,6 +190,7 @@ ul.row {
   background-color: var(--color-white);
   width: 0;
   height: 0.2rem;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .nav .nav-item:hover .nav-link::before {
@@ -337,6 +343,7 @@ ul.row {
   left: -0.1rem;
   right: -0.1rem;
   z-index: 1;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-title {
@@ -368,6 +375,11 @@ ul.row {
 
 .card-work:hover .card-title {
   opacity: 1;
+}
+
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .section-tagline {

@@ -1,4 +1,4 @@
-/* Custom properties 11 - navbar */
+/* col- selector simplification */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
@@ -48,6 +48,8 @@
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
   --nav-item-link-hover: var(--color-primary);
+
+  --section-tagline-margin: 0;
 }
 
 *,
@@ -99,6 +101,12 @@ a:active {
   background-color: var(--color-light-grey);
 }
 
+ul .row {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .navbar-menu {
   float: right;
 }
@@ -130,6 +138,25 @@ a:active {
 
 .visually-hidden {
   display: none;
+}
+
+.col-1-3 {
+  width: 0.3333rem;
+}
+
+.col-1-2 {
+  width: 0.5rem;
+}
+
+[class^="col-"] {
+  float: left;
+  padding: 0.5rem;
+}
+
+.row::after {
+  content: "";
+  display: inline-table;
+  clear: both;
 }
 
 .section {
@@ -167,6 +194,7 @@ a:active {
   font-family: var(--font-family-title);
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
+  margin: var(--section-tagline-margin);
 }
 
 .container {
@@ -177,4 +205,14 @@ a:active {
 
 .footer {
   padding: var(--footer-padding);
+}
+
+.footer ul {
+  text-align: right;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--text-color);
 }

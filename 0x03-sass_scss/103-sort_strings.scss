@@ -46,7 +46,7 @@ $ascii-hex-table: "\00", "\01", "\02", "\03", "\04", "\05", "\06", "\07", "\08",
 }
 
 // quicksort - Quicksort algorithm using random partition.
-// Description: quicksort implementaion using two auxiliary lists, left and
+// Description: quicksort implementation using two auxiliary lists, left and
 //              right, since lists in SASS are immutable.
 // $list: the list to be sorted.
 // $compare-scheme: the comparison scheme to be used.

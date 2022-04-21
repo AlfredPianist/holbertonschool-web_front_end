@@ -70,3 +70,6 @@ $RECYCLE.BIN/
 
 # Validator
 W3C-Validator/
+
+# Sass cache
+.sass-cache/

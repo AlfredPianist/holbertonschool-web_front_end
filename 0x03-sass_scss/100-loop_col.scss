@@ -1,0 +1,6 @@
+/* Task 13 - more for */
+@for $counter from 1 through 5 {
+  .col-#{$counter} {
+    width: (100% / $counter);
+  }
+}

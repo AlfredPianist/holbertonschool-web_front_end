@@ -1,0 +1,24 @@
+/* Task 15 - media queries 2 */
+$base-max-width: 320px;
+$base-font-size: 14px;
+h1 {
+  font-size: $base-font-size + 6;
+  @media screen and (max-width: ($base-max-width * 3)) {
+    & {
+      font-size: $base-font-size + 4;
+    }
+  }
+  @media screen and (max-width: ($base-max-width * 2)) {
+    & {
+      font-size: $base-font-size + 2;
+    }
+  }
+  @media screen and (max-width: $base-max-width) {
+    & {
+      font-size: $base-font-size;
+    }
+    &.small {
+      color: #1d1d1d;
+    }
+  }
+}

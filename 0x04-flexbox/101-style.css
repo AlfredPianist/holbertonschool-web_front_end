@@ -1,0 +1,64 @@
+/* Timemachine styled boxes */
+:root {
+  --color-box1: #1ecd6c;
+  --color-box2: #2d98df;
+  --color-box3: #344a61;
+  --color-box4: #9d55b9;
+  --color-box5: #ea7d05;
+  --font-size-emph: 5rem;
+  --font-size-md: 2.5rem;
+  --font-size-sm: 1rem;
+  --width-box-emph: 15rem;
+  --width-box-md: 8rem;
+  --width-box-sm: 4.5rem;
+  --height-box-emph: 8rem;
+  --height-box-md: 5rem;
+  --height-box-sm: 3.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.box {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 {
+  font-size: var(--font-size-sm);
+  background-color: var(--color-box1);
+  width: var(--width-box-sm);
+  height: var(--height-box-sm);
+}
+.box2 {
+  font-size: var(--font-size-md);
+  background-color: var(--color-box2);
+  width: var(--width-box-md);
+  height: var(--height-box-md);
+}
+
+.box3 {
+  font-size: var(--font-size-emph);
+  background-color: var(--color-box3);
+  width: var(--width-box-emph);
+  height: var(--height-box-emph);
+}
+
+.box4 {
+  font-size: var(--font-size-md);
+  background-color: var(--color-box4);
+  width: var(--width-box-md);
+  height: var(--height-box-md);
+}
+
+.box5 {
+  font-size: var(--font-size-sm);
+  background-color: var(--color-box5);
+  width: var(--width-box-sm);
+  height: var(--height-box-sm);
+}

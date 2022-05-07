@@ -41,12 +41,6 @@
   border-color: var(--color-primary-dark);
 }
 
-/* a,
-a:hover,
-a:focus {
-  color: var(--color-primary);
-} */
-
 .card,
 .card-header,
 .card-footer {

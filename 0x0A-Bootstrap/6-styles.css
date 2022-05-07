@@ -1,0 +1,69 @@
+/* Root */
+:root {
+  --color-light-red: #e0003c;
+  --color-dark-red: #bc1340;
+  --color-light-grey: #8c8c8c;
+  --color-white: #ffffff;
+
+  --text-white: var(--color-white);
+  --text-disabled: var(--color-light-grey);
+  --color-primary: var(--color-light-red);
+  --color-primary-dark: var(--color-dark-red);
+}
+
+.border-bottom {
+  border-color: var(--color-primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+/* a,
+a:hover,
+a:focus {
+  color: var(--color-primary);
+} */
+
+.card,
+.card-header,
+.card-footer {
+  border-color: var(--color-primary);
+  border-radius: 1rem;
+}
+
+.card-header {
+  background-color: var(--color-primary);
+  color: var(--text-white);
+}
+
+.card-header:first-child {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.text-muted {
+  color: var(--text-disabled) !important;
+}

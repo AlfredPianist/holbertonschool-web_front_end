@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 7</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="application/javascript">
+      $(document).ready(function () {
+        function createSearchForm() {
+          $("body").append(
+            $("<input type='text' />"),
+            $("<input type='submit' />").click(function () {
+              const query = $("input[type='text']").val();
+              queryWikipedia(query);
+            }),
+            $("<ul></ul>")
+          );
+        }
+
+        function addNewArticle(id, title, snippet) {
+          const $article = $("<li></li>")
+            .appendTo("ul")
+            .append(
+              $("<p></p>").append(
+                $("<span></span>").append(`${id} - `, $("<b></b>").text(title))
+              ),
+              $("<p></p>").append(snippet)
+            );
+        }
+
+        function queryWikipedia(search) {
+          $.ajax({
+            type: "GET",
+            url: "https://en.wikipedia.org/w/api.php",
+            data: {
+              origin: "*",
+              action: "query",
+              list: "search",
+              srsearch: search,
+              format: "json",
+            },
+            success: function (response) {
+              const results = response.query.search;
+              results.forEach(function (element) {
+                addNewArticle(element.pageid, element.title, element.snippet);
+              });
+            },
+            error: function (response) {
+              console.log("Couldn't fetch data from Wikipedia.");
+            },
+          });
+        }
+
+        createSearchForm();
+      });
+    </script>
+  </head>
+
+  <body></body>
+</html>

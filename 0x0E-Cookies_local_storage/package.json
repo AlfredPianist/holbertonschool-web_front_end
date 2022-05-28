@@ -1,0 +1,24 @@
+{
+  "name": "0x0e-cookies_local_storage",
+  "version": "1.0.0",
+  "description": "Requirements for the 0x0e project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfredPianist/holbertonschool-web_front_end.git"
+  },
+  "author": "Alfredo Delgado Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlfredPianist/holbertonschool-web_front_end/issues"
+  },
+  "homepage": "https://github.com/AlfredPianist/holbertonschool-web_front_end#readme",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}

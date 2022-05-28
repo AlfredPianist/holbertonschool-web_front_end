@@ -73,3 +73,6 @@ W3C-Validator/
 
 # Sass cache
 .sass-cache/
+
+# Node modules
+node_modules/

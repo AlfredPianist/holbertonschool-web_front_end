@@ -20,7 +20,6 @@
         const li = document.createElement("li");
         li.innerText = item;
         li.addEventListener("click", function () {
-          console.log(`clicked ${item}`);
           addItemToCart(item);
         });
         ul.appendChild(li);
